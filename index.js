@@ -86,10 +86,13 @@ Use the addFlavor function below to do the following:
 */
 
 
-function addFlavor(/*your code here*/){
-  /*your code here*/
+function addFlavor(anArray, aString){
+  anArray.unshift(aString);
+  return anArray;
  }
 
+let newFlavs = addFlavor(originalFlavors, 'Rainbow Sherbert')
+console.log(newFlavs);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 4: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀
