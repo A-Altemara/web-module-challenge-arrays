@@ -63,10 +63,14 @@ For Example: is31Flavors(originalFlavors) will return true if your code is worki
 */
 
 
-function is31Flavors(/*your code here*/){
-  /*your code here*/
+function is31Flavors(anArray){
+  if(anArray.length === 31) {
+    return true;
+  } else {
+    return false;
+  }
  }
-
+is31Flavors(copyOfOrigionalFlavors);
 
 
 /* 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 Task 3: 🚀🚀🚀🚀🚀🚀🚀🚀🚀🚀 
