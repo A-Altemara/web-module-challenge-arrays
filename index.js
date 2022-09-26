@@ -172,11 +172,17 @@ Use the filterByWord function below to do the following:
   DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem. 
 */
 
-
-function filterByWord(/*your code here*/){
-  /*your code here*/
+function filterByWord(anArray, aString){
+  const holidayFlavors = []
+  for(let i = 0; i < anArray.length; i++){
+    if(anArray[i].includes(aString)) {
+      holidayFlavors.push(anArray[i]);
+    }
+  }
+  return holidayFlavors;
 }
-
+const holidayFlavors = filterByWord(originalFlavors, "Chocolate");
+console.log(holidayFlavors);
 
 
 /* 💪💪💪💪💪🧁🍦🍨 STRETCH 🍨🍦🍫💪💪💪💪💪*/ 
